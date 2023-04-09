@@ -1,4 +1,4 @@
-public class MinhasExcecao extends RuntimeException {
+public class MinhasExcecao extends Exception {
 
     public MinhasExcecao(String msg) {
         super(msg);

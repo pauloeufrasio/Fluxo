@@ -19,9 +19,10 @@ public class FluxoComError {
     }
 
     private static void metodo2() {
-        System.out.println("Ini do metodo 2");
+        System.out.println("Chamanado metodo 2");
         metodo2();
         System.out.println("Fim do metodo 2");
+
     }
 }
 

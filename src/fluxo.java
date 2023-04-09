@@ -17,14 +17,15 @@ public class fluxo {
     }
     // Depois do metodo1 ele executa o metodo 2
 
-    private static void metodo1() {
+    // metodo unchecked quando o nao sao verificados pelo compilador
+    private static void metodo1() throws MinhasExcecao{
         System.out.println("Ini do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
     }
     // executando metodo2 agora ele retora pro metodo 1 e printa o fim do main de cada metodo
 
-    private static void metodo2() {
+    private static void metodo2() throws MinhasExcecao {
         System.out.println("Ini do metodo2");
         throw new MinhasExcecao("Deu muito errado");
     }
