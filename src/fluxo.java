@@ -6,8 +6,8 @@ public class fluxo {
         // Exceção implementada
         try {
             metodo1();
-            // capturar ArithmeticException ou NullPointerException
-        } catch(ArithmeticException | NullPointerException ex) { // Lançando 2 exceções
+            // capturar ArithmeticException ou NullPointerException ou MinhasExcecao
+        } catch (ArithmeticException | NullPointerException | MinhasExcecao ex) { // Lançando 2 exceções
             // Atribuindo mensagem da exceção por chamada getMessage()
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
@@ -26,12 +26,7 @@ public class fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        for(int i = 1; i <= 5; i++) {
-            System.out.println(i);
-            // Conta sem objeto pra gerar exceção
-            Conta c = null;
-            c.deposita();
-        }
-        System.out.println("Fim do metodo2");
+        throw new MinhasExcecao("Deu muito errado");
     }
+
 }

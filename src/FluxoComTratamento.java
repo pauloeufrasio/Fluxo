@@ -4,6 +4,7 @@ public class FluxoComTratamento {
         System.out.println("Ini do main");
         try{
             metodo1();
+            // "ex" é uma referencia sempre quando for chamar utilizar a referencia
         } catch(ArithmeticException | NullPointerException ex) {
             String msg = ex.getMessage();
             System.out.println("ArithmeticException " + msg);
@@ -16,6 +17,7 @@ public class FluxoComTratamento {
         System.out.println("Ini do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
+
     }
 
     private static void metodo2() {
