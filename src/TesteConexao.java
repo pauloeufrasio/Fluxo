@@ -1,5 +1,5 @@
 public class TesteConexao {
-
+        // Simplificando codigo de conexão
     public static void main(String[] args) {
         try (Conexao conexao = new Conexao()) {
             conexao.leDados();
