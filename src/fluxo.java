@@ -17,7 +17,7 @@ public class fluxo {
     }
     // Depois do metodo1 ele executa o metodo 2
 
-    // metodo unchecked quando o nao sao verificados pelo compilador
+    // metodo checked quando sao verificados pelo compilador
     private static void metodo1() throws MinhasExcecao{
         System.out.println("Ini do metodo1");
         metodo2();
