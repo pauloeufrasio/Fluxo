@@ -6,8 +6,8 @@ public class fluxo {
         // Exceção implementada
         try {
             metodo1();
-            // capturar ArithmeticException ou NullPointerException ou MinhasExcecao
-        } catch (ArithmeticException | NullPointerException | MinhasExcecao ex) { // Lançando 2 exceções
+            // capturar ArithmeticException ou NullPointerException ou MinhasExcecao obs: catch (Exception ex) pega todas as exceçoes que esta estendida a Exception
+        } catch (Exception ex) { // Lançando 2 exceções
             // Atribuindo mensagem da exceção por chamada getMessage()
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
