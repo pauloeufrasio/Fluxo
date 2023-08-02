@@ -1,28 +1,18 @@
+// Classe TesteConexao
 public class TesteConexao {
-        // Simplificando codigo de conexão
+    // Método main
     public static void main(String[] args) {
+        // Aqui estamos criando uma instância da classe Conexao usando o recurso try-with-resources.
+        // O try-with-resources garante que a instância de Conexao será fechada automaticamente após a conclusão do bloco try,
+        // independentemente se ocorreu uma exceção ou não.
         try (Conexao conexao = new Conexao()) {
+            // Chamando o método leDados() na instância de Conexao
             conexao.leDados();
         } catch (IllegalStateException ex) {
+            // Bloco catch para capturar a exceção IllegalStateException, caso ocorra
             System.out.println("Deu Erro na conexão");
-            {
-
-                //-----------------------------------------------------------------------
-
-//        Conexao con = null;
-//
-//        try {
-//            con = new Conexao();
-//            con.leDados();
-//        } catch (IllegalStateException ex) {
-//            System.out.println("Deu erro na conexão");
-//            // finally, um bloco opcional que podemos colocar no final e que sempre será executado, com ou sem erro.
-//        } finally {
-//            con.fecha();
-//
-//        }
-
-            }
+            // O bloco catch permite que você faça algum tratamento específico para a exceção capturada.
+            // Neste caso, estamos apenas imprimindo uma mensagem informando que ocorreu um erro na conexão.
         }
     }
 }
